@@ -1,0 +1,13 @@
+package com.example.dockerspringboot;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class DockerController {
+    @GetMapping("/dockerDemo")
+    public String getHelloWorld(){
+        return "Docker demo";
+    }
+
+}
